@@ -352,8 +352,10 @@ iframe {
 
 /* VIDEO BACKGROUND */
 #myVideo {
-  height: auto;
-  width: 105vw;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
   position: fixed;
   overflow-x: hidden;
   z-index: -100;
@@ -775,8 +777,7 @@ section .intro {
 section .intro h1.title {
   padding-top: 15%;
   font-size: 6em;
-  line-height: 0.65;
-  margin: 0 auto;
+  margin: 0 auto 0.5em auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -838,7 +839,7 @@ section .intro.large blockquote {
 /* HERO SECTION */
 .hero {
   text-align: center;
-  min-height: 100vh;
+  min-height: 51vh;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -874,11 +875,10 @@ section .intro.large blockquote {
   background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  height: 150%;
+  height: 100%;
   width: 100%;
 }
 .bkg.hawaii {
-  margin-top: 100vh;
   background-image: url(/img/general/hawaii-1.jpg);
 }
 .bkg.buddha {
@@ -912,8 +912,7 @@ section .intro.large blockquote {
   padding: 2.5% 0 2.5% 0;
 }
 .strip.white-50.top {
-  margin-top: 20%;
-  margin-bottom: 20%;
+  margin-bottom: 0%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1366,7 +1365,7 @@ section .intro.large blockquote {
 }
 .site-header-small .site-nav a {
   display: inline-block;
-  padding: 0.75em;
+  padding: 3vh 0.75em;
   line-height: 1;
 }
 .site-header-small .site-nav .menu-button {
@@ -1419,7 +1418,6 @@ section .intro.large blockquote {
     line-height: 0;
   }
   .site-header .site-nav {
-    max-height: 5vh;
     margin-top: 0 !important;
   }
   .site-header .site-nav ul {
@@ -1436,7 +1434,7 @@ section .intro.large blockquote {
     position: absolute;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    padding: 1em 0;
+    padding: 5vh 1em;
     max-height: 5vh;
     background-color: white;
     -webkit-transition: 0.3s;
@@ -1450,7 +1448,7 @@ section .intro.large blockquote {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    font-size: 3.3vw;
+    font-size: 3.1vw;
     padding: 1em 1vw;
     margin: 0;
     white-space: nowrap;

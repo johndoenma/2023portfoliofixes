@@ -94,8 +94,8 @@ section {
         h1.title {
             padding-top: 15%;
             font-size: 6em;
-            line-height: .65;
-            margin: 0 auto;
+            // line-height: .65;
+            margin: 0 auto .5em auto;
             align-items: center;
             text-align: center;
             color: white;
@@ -157,7 +157,7 @@ section {
 
 .hero {
     text-align: center;
-    min-height: 100vh;
+    min-height: 51vh;
     align-items: center;
     .intro-card {
         margin: 40% auto;
@@ -195,10 +195,10 @@ section {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    height: 150%;
+    height: 100%;
     width: 100%;
     &.hawaii { 
-        margin-top:  100vh;
+        // margin-top:  100vh;
         background-image: url(/img/general/hawaii-1.jpg); 
     }
     &.buddha { background-image: url(/img/calm/square-buddha.jpg); }
@@ -229,8 +229,8 @@ section {
         padding: 2.5% 0 2.5% 0;
         
         &.top {
-            margin-top: 20%;
-            margin-bottom: 20%;
+            // margin-top: 20%;
+            margin-bottom: 0%;
             display: flex;
             flex-direction: row;
         }

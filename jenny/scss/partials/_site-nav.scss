@@ -105,7 +105,7 @@
 
         a {
             display: inline-block;
-            padding: .75em;
+            padding: 3vh .75em;
             line-height: 1;
         }
 
@@ -157,7 +157,7 @@
         padding-bottom: 0;
         line-height: 0;
         .site-nav {
-            max-height: 5vh;
+            // max-height: 5vh;
             margin-top: 0 !important;
             ul {
                 list-style: none;
@@ -166,7 +166,7 @@
                 justify-content: space-between;
                 position: absolute;
                 flex-wrap: nowrap;
-                padding: 1em 0;
+                padding: 5vh 1em;
                 max-height: 5vh;
                 background-color: white;
                 transition: 0.3s;
@@ -176,7 +176,7 @@
                     bottom: 0;
                     opacity: 1!important;
                     align-items: center;
-                    font-size: 3.3vw;
+                    font-size: 3.1vw;
                     padding: 1em 1vw;
                     margin: 0;
                     // line-height: 0;
