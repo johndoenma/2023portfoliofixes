@@ -14,7 +14,7 @@ img {
 }
 
 header {
-    background-color: rgba(255, 255, 255, 0.657);
+    background-color: rgba(255, 255, 255, 1);
     height: 45px;
     display: flex;
     flex-direction: row;
@@ -40,31 +40,32 @@ header a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-left: 20px;
-    width: 150px;
+    /* margin-left: 20px;
+    width: 150px; */
 }
 
-.nav-work {
-    margin-right: 35px;
+.nav-work a {
+    padding: 2vh 2vw;
 }
 
 .nav-middle {
     font-family: "ivyora-display", sans-serif;
     font-weight: 700;
     font-size: 30px;
+    padding: 0 3vw;
 }
 
 .nav-right {
-    width: 150px;
-    margin-right: 10px;
+    /* width: 150px; */
+    margin-right: 2vw;
 }
 
 .contact-button {
     color: white;
     border: 1px solid black;
     border-radius: 30px;
-    width: 55px;
-    padding: 5px 30px;
+    /* width: 55px; */
+    padding: 5px 20px;
     margin: 0;
 }
 
@@ -79,6 +80,7 @@ header a {
 
 .intro {
     font-size: 60px;
+    font-size: clamp(30px, 5vw, 60px);
     line-height: 50px;
     margin: 0 auto;
 }
@@ -97,7 +99,7 @@ header a {
 
 .skills li {
     list-style: none;
-    padding: 0 35px;
+    padding: 0 3vw;
     font-weight: 400;
 }
 
@@ -134,11 +136,9 @@ svg {
 
 #projects {
     width: 100%;
+    max-width: 750px;
     margin-left: auto;
     margin-right: auto;
-
-
-
 }
 
 .container {
@@ -153,15 +153,22 @@ svg {
     height: auto;
 }
 
-.column {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    column-gap: 30px;
-    margin-bottom: 30px
+@media (min-width: 768px) {
+
+    .row {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        column-gap: 30px;
+        margin-bottom: 30px
+    }
+
+    .one-half {
+        width: 50%;
+    }
+
 }
 
 #projects h2 {
@@ -181,7 +188,8 @@ svg {
     height: 250px;
     overflow: hidden;
     border: 1px solid rgba(206, 206, 206, 0.492);
-    box-shadow: 1px 3px 20px rgba(206, 206, 206, 0.593)
+    box-shadow: 1px 3px 20px rgba(206, 206, 206, 0.593);
+    margin: 0 auto 2em auto;
 }
 
 .card:hover {
@@ -284,10 +292,22 @@ svg {
     object-fit: cover;
     border-radius: 500px;
     max-width: 400px;
+    margin-bottom: 2em;
 }
 
 .introduction {
-    max-width: 50%;
+    text-align: left;
+}
+
+@media (min-width: 768px) {
+    .align-content-right img {
+        margin: 0 0 0 auto;
+    }
+}
+
+.container p.introduction {
+    max-width: 30em;
+    margin: 0;
 }
 
 /* locomotive scroll pin */
