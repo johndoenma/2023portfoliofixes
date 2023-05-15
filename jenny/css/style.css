@@ -776,6 +776,8 @@ section .intro {
 }
 section .intro h1.title {
   padding-top: 15%;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
   font-size: 6em;
   margin: 0 auto 0.5em auto;
   -webkit-box-align: center;
@@ -879,24 +881,24 @@ section .intro.large blockquote {
   width: 100%;
 }
 .bkg.hawaii {
-  background-image: url(/img/general/hawaii-1.jpg);
+  background-image: url(../img/general/hawaii-1.jpg);
 }
 .bkg.buddha {
-  background-image: url(/img/calm/square-buddha.jpg);
+  background-image: url(../img/calm/square-buddha.jpg);
 }
 .bkg.letters {
-  background-image: url(/img/general/lettering-samples-3.jpg);
+  background-image: url(../img/general/lettering-samples-3.jpg);
 }
 .bkg.extra {
-  background-image: url(/img/general/dough.jpg);
+  background-image: url(../img/general/dough.jpg);
 }
 .bkg.gallery {
-  background-image: url(/img/gallery/Proj_1_draft3.png);
+  background-image: url(../img/gallery/Proj_1_draft3.png);
 }
 
 .strip {
   margin: 0;
-  padding: 1em 0;
+  padding: 1em;
 }
 .strip.red-50 {
   background-color: rgba(202, 20, 47, 0.7882352941);
@@ -972,7 +974,7 @@ section .intro.large blockquote {
 #myself h1 {
   line-height: 0.95;
   color: white;
-  padding-bottom: 0;
+  padding: 0 0.5em;
   margin-bottom: 0;
   text-align: center;
 }

@@ -93,6 +93,8 @@ section {
         min-height: 100vh; 
         h1.title {
             padding-top: 15%;
+            padding-left: .25em;
+            padding-right: .25em;
             font-size: 6em;
             // line-height: .65;
             margin: 0 auto .5em auto;
@@ -199,19 +201,19 @@ section {
     width: 100%;
     &.hawaii { 
         // margin-top:  100vh;
-        background-image: url(/img/general/hawaii-1.jpg); 
+        background-image: url(../img/general/hawaii-1.jpg); 
     }
-    &.buddha { background-image: url(/img/calm/square-buddha.jpg); }
-    &.letters { background-image: url(/img/general/lettering-samples-3.jpg);}
-    &.extra { background-image: url(/img/general/dough.jpg); }
-    &.gallery { background-image: url(/img/gallery/Proj_1_draft3.png); }
+    &.buddha { background-image: url(../img/calm/square-buddha.jpg); }
+    &.letters { background-image: url(../img/general/lettering-samples-3.jpg);}
+    &.extra { background-image: url(../img/general/dough.jpg); }
+    &.gallery { background-image: url(../img/gallery/Proj_1_draft3.png); }
 
 }
 
 
 .strip {
     margin: 0;
-    padding: 1em 0;
+    padding: 1em;
     
     
     &.red-50 {
@@ -298,7 +300,7 @@ section {
         }
         line-height: .95;
         color: white;
-        padding-bottom: 0;
+        padding: 0 .5em;
         margin-bottom: 0;
         text-align: center;
         &.sub {
