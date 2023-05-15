@@ -1,0 +1,33 @@
+/* RESPONSIVE IMAGES */
+
+img {
+    max-width: 100%;
+    height: auto;
+    &.full {
+        min-width: 100vw;
+        height: auto;
+    }
+}
+
+/* RESPONSIVE YOUTUBE VIDEO */
+
+iframe {
+    max-width: 100%;
+    max-height: 100vh;
+}
+
+
+/* VIDEO BACKGROUND */
+
+#myVideo {
+    height: auto;
+    width: 105vw;
+    position: fixed;
+    overflow-x: hidden;
+    z-index: -100;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+}
+
+

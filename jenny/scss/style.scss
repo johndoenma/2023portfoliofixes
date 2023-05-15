@@ -1,0 +1,50 @@
+/* GLOBAL RESETS */
+* { box-sizing: border-box; }
+
+// VARIABLES
+$color-background: rgb(240, 231, 233);
+$color-text-body: rgba( 0, 0, 0,.75);
+$type-base: "Trebuchet MS", Tahoma, sans-serif;
+$type-heading: "blenny", sans-serif;
+$type-subheading: mrs-eaves, serif;
+$type-linewidth: 37em;
+
+//COLORS
+$type-color: rgb(83, 76, 84);
+$type-color-lightgrey: rgba(0, 0, 0, 0.5);
+$accent-color: rgb(130, 84, 106);
+$accent-color-lines: rgb(156, 154, 154);
+$accent-color-light: rgba(229, 237, 235, 0.445);
+$accent-color-white: rgba(255, 255, 255, 1);
+$accent-color-red: #CA142F;
+$accent-color-orange: #FF6F00;
+$accent-color-yellow: #ffc400;
+$accent-color-green: #A4CB0A;
+$accent-color-blue: #02CED9;
+$accent-color-purple: #8C48A1;
+$red-50: #ca142fc9;
+$orange-50: #ff6f00c6;
+$yellow-50: #ffc400bb;
+$green-50: #a4cb0ae3;
+$blue-50: #02ced9e7;
+$purple-50: #8c48a1cd;
+
+
+
+//BREAKPOINTS
+$breakpoint-small: 768px;
+$breakpoint-medium: 1050px;
+$breakpoint-large: 1250px;
+
+//IMPORTS
+@import "partials/toc";
+@import "partials/typography";
+@import "partials/buttons"; 
+@import "partials/media";
+@import "partials/helpers";
+@import "partials/layout";
+@import "partials/grid";
+@import "partials/structure";
+@import "partials/site-nav";
+
+     

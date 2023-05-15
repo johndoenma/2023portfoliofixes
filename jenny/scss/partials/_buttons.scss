@@ -1,0 +1,113 @@
+/* BUTTONS */
+button { font-size: inherit; }
+
+  button,
+  a.button {
+    display: inline-block;
+    background-color: $accent-color-red;
+    border: 1px solid $accent-color-red;
+    color: white;
+    padding: 0.75em 1em;
+    border-radius: 0.75em;
+    margin: 0.5em 0;
+    border: none;
+    cursor: pointer;
+    line-height: 1em;
+    text-decoration: none;
+    font-family: $type-base;
+  } 
+
+  button:hover,
+  a.button:hover {
+    background-color: $accent-color-blue;
+    color: white;
+    border-color: $accent-color-blue;
+    text-decoration: none;
+    border-radius: 1em;
+    font-style: italic;
+  }
+
+/* LINKS */
+
+a {
+  text-decoration: none;
+    .red {color: $accent-color-red;}
+    .orange {color: $accent-color-orange;}
+    .yellow {color: $accent-color-yellow;}
+    .green {color: $accent-color-green;}
+    .blue {color: $accent-color-blue;}
+    .purple {color: $accent-color-purple;}
+    &:hover {color: black;}
+}
+
+details {
+  margin: 0 auto;
+  p {
+    line-height: 1;
+    padding: 10px 0;
+  }
+  
+}
+
+summary {
+  display: inline-block;
+  color: white;
+  padding: 0.75em 1em;
+  border-radius: 7px;
+  margin: 0 auto;
+  cursor: pointer;
+  line-height: 1em;
+  text-decoration: none;
+  font-family: $type-base;
+  text-transform: uppercase;
+  font-weight: bolder;
+
+  
+// AKA RAINBOW BUTTON
+  &.boop {
+    margin: 0 auto;
+    background-image: linear-gradient(45deg,
+      $accent-color-red 16.666%, 
+      $accent-color-orange 16.666%, 
+      $accent-color-yellow 33.333%, 
+      $accent-color-green 50%, 
+      $accent-color-blue 66.666%, 
+      $accent-color-purple 83.333%);
+    position: relative;
+    padding: 3px;
+    display: inline-block;
+    border-radius: 7px;
+    background-size: 100%;
+    background-repeat: repeat;
+    -webkit-border-color: transparent; 
+    animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+    -webkit-background-clip: border;
+
+    span {
+      display: inline-block;
+      background: white;
+      color: black;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      border-radius: 5px;
+      font-size: 1em;
+      padding: 10px;
+
+      &:hover {
+        background: none;
+        color: white;
+      }
+    }
+  }
+ 
+}
+
+
+
+
+summary:hover {
+  animation: rainbow-text-simple-animation 1s ease-in forwards;
+}
+ 
+
+

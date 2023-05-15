@@ -1,0 +1,178 @@
+/* TYPOGRAPHY */
+
+body {
+    font-family: $type-base;
+    font-size: 100%; /* 16px */
+    line-height: 1.3;
+    color: $type-color; 
+}
+
+h1 {
+    font-family: $type-heading;
+    margin: 0;
+    max-width: $type-linewidth;
+    font-weight: 900;
+    font-style: normal;
+} 
+
+h2 {
+    font-family: $type-subheading;
+    margin: 0 0 .5em 0;
+    max-width: $type-linewidth;
+    text-transform: uppercase;
+    letter-spacing: 10px;
+} 
+
+h3 {
+    font-family: $type-heading;
+    margin: 0 0 .5em 0;
+    max-width: $type-linewidth;
+} 
+
+h4 {
+    font-family: $type-heading;
+    margin: 0 0 .5em 0;
+    max-width: $type-linewidth;
+    text-transform: uppercase;
+    letter-spacing: 0px;
+}
+
+h5, h6 {
+    font-family: $type-heading;
+    margin: 0 0 .5em 0;
+    max-width: $type-linewidth;
+    letter-spacing: 0px;
+}
+
+/* Traditional typographic scale
+    48, 36, 24, 21, 18, 16 */
+
+h1 { font-size: 3em; line-height: 1em;} /* 48 / 16 = 3em */
+h2 { font-size: 2.25em; line-height: 1.1em;} /* 36 / 16 = 2.25em */
+h3 { font-size: 1.5em; line-height: 1.2em;} /* 24 / 16 = 1.5em */
+h4 { font-size: 1.31em; line-height: 1.3em;} /* 21 / 16 = 1.31em */
+h5 { font-size: 1.13em; line-height: 1.4em;} /* 18 / 16 = 1.13em */
+h6 { font-size: 1em; line-height: 1.5em;} /* 16 / 16 = 1em */
+
+p {
+    margin: 0 0 .5em 0;
+    max-width: $type-linewidth;
+ 
+    &.note {
+        font-family: $type-base;
+        font-size: 90%;
+        font-weight: 100;
+        font-style: italic;
+        color: $type-color-lightgrey;
+      }
+}
+
+strong {
+    font-weight: bold;
+}
+
+/* HORIZONTAL RULE */
+hr {
+    border: 0;
+    max-width: 80%;
+    height: 1px;
+    margin: 4em auto;
+    // background: rgb(161, 161, 161);
+}
+
+/* HELPERS */
+
+
+.subheadline {
+    font-family: $type-subheading;
+    font-size: 2.5em;
+    font-weight: 400;
+    font-style: normal;
+    color: $accent-color-red;
+    margin: 0.25em 0 0.5em 0;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    text-align: right;
+}
+
+blockquote {
+    font-size: 1.14em;
+    line-height: 1.3;
+    padding: 1.5em;
+    max-width: 38em;
+    font-family: $type-subheading;
+}
+
+blockquote cite {
+    display: block;
+    opacity: 0.8;
+    font-size: .85em;
+    color: white!important;
+}
+
+
+
+  
+  blockquote cite:before {
+    content: "—";
+    font-size: .8em;
+    margin-right: 0.25em;
+}
+
+
+
+/* SECTION HEADING */
+
+
+ul {
+    list-style-type: none;
+}
+
+
+h1, h2, h3, h4, h5, h6, li, p, font, span, blockquote, a {
+    &.red {color: $accent-color-red!important;}
+    &.orange {color: $accent-color-orange!important;}
+    &.yellow {color: $accent-color-yellow!important;}
+    &.green {color: $accent-color-green!important;}
+    &.blue {color: $accent-color-blue!important;}
+    &.purple {color: $accent-color-purple!important;}
+    &.black {color: black;}
+    &.white {color: white;}
+    &.rainbow {
+        background-color: $accent-color-red;
+        background-image: linear-gradient(
+            45deg, $accent-color-red 16.666%, $accent-color-orange 16.666%, 
+            $accent-color-orange 33.333%, $accent-color-yellow 33.333%, 
+            $accent-color-yellow 50%, $accent-color-green 50%,  $accent-color-green 66.666%, $accent-color-blue 66.666%, 
+            $accent-color-blue 83.333%,
+            $accent-color-purple 83.333%);
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+            
+    }
+    &.rainbow:hover{
+        animation: rainbow-text-simple-animation 1s ease-in forwards;
+    }
+    &.rainbow-2 {
+        background-color: $accent-color-red;
+        text-shadow: -1px -1px white;
+        background-image: linear-gradient(
+            45deg, $accent-color-red 16.666%, $accent-color-orange 16.666%, 
+            $accent-color-orange 33.333%, $accent-color-yellow 33.333%, 
+            $accent-color-yellow 50%, $accent-color-green 50%, $accent-color-green 66.666%, $accent-color-blue 66.666%, 
+            $accent-color-blue 83.333%,
+            $accent-color-purple 83.333%);
+        background-size: 100%;
+        background-repeat: repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent; 
+        animation: rainbow-text-simple-animation-rev 0.75s ease forwards;
+            
+    }
+    &.rainbow-2:hover{
+        animation: rainbow-text-simple-animation 1s ease-in forwards;
+    }
+}

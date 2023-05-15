@@ -1,0 +1,69 @@
+/* SEMANTIC GRID */
+
+$gridgap: 2%;
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+
+    &.centered { justify-content: center; }
+    &.swapped {flex-direction: row-reverse; }
+    &.stacked { flex-direction: column; }
+    &.align-top {align-items: flex-start; }
+  
+    @media (min-width: $breakpoint-small) {
+
+        .one-whole { width: 100% - $gridgap; }
+        .four-fifths { width: 80% - $gridgap; }
+        .three-fourths { width: 75% - $gridgap; }
+        .two-thirds { width: 66.6666% - $gridgap; }
+        .three-fifths { width: 60% - $gridgap; }
+        .one-half { width: 50% - $gridgap; }
+        .two-fifths { width: 40% - $gridgap; }
+        .one-third { width: 33.3333% - $gridgap; }
+        .one-fourth { width: 25% - $gridgap; }
+        .one-fifth { width: 20% - $gridgap; }
+
+        .push-one-fourth { margin-left: 25% + ($gridgap / 2);}
+        .push-one-third { margin-left: 33.3333% + ($gridgap / 2);}
+        .push-one-half { margin-left: 50% + ($gridgap / 2);}
+        .push-three-fourths { margin-left: 75% + ($gridgap / 2);}
+
+        .centered {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        > * { flex-grow: 0; }
+    }
+
+    &.edgy { 
+        margin: 0;
+        align-items: stretch; 
+        auto-fit {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        } 
+        @media (min-width: $breakpoint-small) {
+            .one-half { width: 50%; }
+            .one-third { width: 33.3333%; }
+            > * { flex-grow: 1; }
+        }
+        > * { margin: 0; }
+    }
+
+    > * {
+        margin: ($gridgap / 2);
+        flex-grow: 1;
+    }
+     
+}
+
+
+
+
+
